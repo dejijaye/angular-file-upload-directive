@@ -1,0 +1,9 @@
+<div class="">
+    <input type="file" />
+    <input type="hidden" ng-model="filename" />
+    <span ng-show="filename">{{filename}}</span>
+    <div class="progress" ng-show="progress">
+        <div class="progress-bar" style="width:{{progress}}%;"><span ng-show="progress" ng-hide="filename">{{progress}}%</span></div>
+    </div>
+    <div class="iframe-html"></div>
+</div>
