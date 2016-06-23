@@ -31,8 +31,8 @@ myApp.directive('myDirective', function() {
 
                 done: function(e, data) {
                     console.log(data);
-                    var baseUrl = "http://fast.wistia.com/oembed/?url=";
-                    var accountUrl = encodeURIComponent("http://dejijaye.wistia.com/medias/");
+                    var baseUrl = "https://fast.wistia.com/oembed/?url=";
+                    var accountUrl = encodeURIComponent("https://dejijaye.wistia.com/medias/");
                     var mediaHashedId = data.result.hashed_id;
 
                     function getEmbeddedHtml(hashedId, callback) {
@@ -41,9 +41,6 @@ myApp.directive('myDirective', function() {
 
                     scope.$apply(function() {
                       scope.filename = data.result.name;
-                      scope.url = data.result.thumbnail.url;
-                      scope.width = data.result.thumbnail.width;
-                      scope.height = data.result.thumbnail.height;
                       angular.element(".iframe-html").append("<br />");
 
                       getEmbeddedHtml(mediaHashedId, function(json) {
