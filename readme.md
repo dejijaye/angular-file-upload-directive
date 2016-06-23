@@ -1,0 +1,1 @@
+Angular direct for video upload to Wista using jquery file upload plugin

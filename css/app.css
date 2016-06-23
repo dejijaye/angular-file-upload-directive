@@ -1,0 +1,29 @@
+body {
+  font: 16px 'Raleway', Helvetica, Arial, sans-serif;
+  color: #4d4d4d;
+  background: #f5f5f5;
+  margin: 0 auto;
+  line-height: 1.6em;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  font-weight: 500;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.form-field {
+  width: 40%;
+  margin: 100px auto;
+}
+
+input[type=file] {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+iframe {
+  position: relative;
+  width: 100%;
+}
