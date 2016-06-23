@@ -41,9 +41,6 @@ myApp.directive('myDirective', function() {
 
                     scope.$apply(function() {
                       scope.filename = data.result.name;
-                      scope.url = data.result.thumbnail.url;
-                      scope.width = data.result.thumbnail.width;
-                      scope.height = data.result.thumbnail.height;
                       angular.element(".iframe-html").append("<br />");
 
                       getEmbeddedHtml(mediaHashedId, function(json) {
