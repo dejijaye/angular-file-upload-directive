@@ -31,8 +31,8 @@ myApp.directive('myDirective', function() {
 
                 done: function(e, data) {
                     console.log(data);
-                    var baseUrl = "http://fast.wistia.com/oembed/?url=";
-                    var accountUrl = encodeURIComponent("http://dejijaye.wistia.com/medias/");
+                    var baseUrl = "https://fast.wistia.com/oembed/?url=";
+                    var accountUrl = encodeURIComponent("https://dejijaye.wistia.com/medias/");
                     var mediaHashedId = data.result.hashed_id;
 
                     function getEmbeddedHtml(hashedId, callback) {
